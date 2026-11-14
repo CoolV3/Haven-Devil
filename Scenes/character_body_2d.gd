@@ -5,6 +5,7 @@ const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
+@onready var character: CharacterBody2D = $"."
 
 
 
@@ -34,4 +35,4 @@ func _physics_process(delta: float) -> void:
 		var collider = collision.get_collider()
 		
 		if collider.is_in_group("enemies"):
-			print("coll")
+			character.global_position += Vector2(500, 0)
