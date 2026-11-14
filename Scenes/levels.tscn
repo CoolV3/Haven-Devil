@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cv31qbdi3in83"]
+
+[sub_resource type="TileSet" id="TileSet_74syf"]
+
+[node name="Levels" type="Node2D" unique_id=209854832]
+
+[node name="Template" type="Node2D" parent="." unique_id=1016429287]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Template" unique_id=556929604]
+tile_set = SubResource("TileSet_74syf")
+
+[node name="Camera2D" type="Camera2D" parent="Template" unique_id=2093218902]
+zoom = Vector2(3, 3)
