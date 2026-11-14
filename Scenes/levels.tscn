@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://k0t04l43cvfk" path="res://Assets/Level Devil Character(1).png" id="5_jk88k"]
 [ext_resource type="PackedScene" uid="uid://b3dnga1eyp688" path="res://Scenes/enemy.tscn" id="6_uotyi"]
 [ext_resource type="PackedScene" uid="uid://ds56oyurvxvqc" path="res://Scenes/spike.tscn" id="7_p1uqq"]
+[ext_resource type="Texture2D" uid="uid://cql0i4j5ry0bo" path="res://Assets/spike.png" id="8_j0k6p"]
+[ext_resource type="PackedScene" uid="uid://d3vhtscq17og" path="res://Scenes/coin.tscn" id="9_bku7o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3akqy"]
 texture = ExtResource("1_xgx5e")
@@ -268,5 +270,16 @@ position = Vector2(1675, 79)
 
 [node name="StaticBody2D" parent="." unique_id=12424889 instance=ExtResource("7_p1uqq")]
 position = Vector2(-7, 85)
+
+[node name="Spike" type="Sprite2D" parent="." unique_id=1555359804]
+position = Vector2(682, 89)
+texture = ExtResource("8_j0k6p")
+
+[node name="Spike2" type="Sprite2D" parent="." unique_id=188429208]
+position = Vector2(811, 89)
+texture = ExtResource("8_j0k6p")
+
+[node name="StaticBody2D2" parent="." unique_id=502086475 instance=ExtResource("9_bku7o")]
+position = Vector2(-77, 73)
 
 [connection signal="child_entered_tree" from="Player/CharacterBody2D/CollisionShape2D" to="Player/CharacterBody2D" method="_on_collision_shape_2d_child_entered_tree"]

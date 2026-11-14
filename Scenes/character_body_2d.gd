@@ -7,7 +7,7 @@ const JUMP_VELOCITY = -400.0
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 @onready var character: CharacterBody2D = $"."
 var startPosition
-
+var score = 0
 
 func _ready() -> void:
 	startPosition = character.global_position
@@ -40,3 +40,8 @@ func _physics_process(delta: float) -> void:
 		if collider.is_in_group("spike"):
 			print("spike")
 			character.global_position = startPosition
+		if collider.is_in_group("coin"):
+			score += 1
+			collider.queue_free()
+			print(score)
+			
