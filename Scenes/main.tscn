@@ -1,7 +1,45 @@
 [gd_scene format=3 uid="uid://bsjvwxwnc3ldf"]
 
 [ext_resource type="PackedScene" uid="uid://cv31qbdi3in83" path="res://Scenes/levels.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://d3vhtscq17og" path="res://Scenes/coin.tscn" id="2_8gbba"]
+[ext_resource type="PackedScene" uid="uid://ds56oyurvxvqc" path="res://Scenes/spike.tscn" id="3_jjvhh"]
 
 [node name="Main" type="Node2D" unique_id=1040878818]
 
 [node name="Levels" parent="." unique_id=209854832 instance=ExtResource("1_jjgbg")]
+
+[node name="StaticBody2D" parent="." unique_id=502086475 instance=ExtResource("2_8gbba")]
+position = Vector2(738, 59)
+
+[node name="StaticBody2D2" parent="." unique_id=188724022 instance=ExtResource("2_8gbba")]
+position = Vector2(866, 60)
+
+[node name="StaticBody2D3" parent="." unique_id=1285309029 instance=ExtResource("2_8gbba")]
+position = Vector2(1357, 56)
+
+[node name="StaticBody2D4" parent="." unique_id=1765916460 instance=ExtResource("2_8gbba")]
+position = Vector2(1405, 30)
+
+[node name="StaticBody2D5" parent="." unique_id=1320424914 instance=ExtResource("2_8gbba")]
+position = Vector2(1459, 60)
+
+[node name="StaticBody2D6" parent="." unique_id=12424889 instance=ExtResource("3_jjvhh")]
+position = Vector2(1435, 81)
+
+[node name="StaticBody2D7" parent="." unique_id=1104093574 instance=ExtResource("3_jjvhh")]
+position = Vector2(1528, 80)
+
+[node name="StaticBody2D8" parent="." unique_id=1493016233 instance=ExtResource("3_jjvhh")]
+position = Vector2(1611, 82)
+
+[node name="StaticBody2D9" parent="." unique_id=2817819 instance=ExtResource("3_jjvhh")]
+position = Vector2(2178, 281)
+
+[node name="StaticBody2D10" parent="." unique_id=1417812384 instance=ExtResource("3_jjvhh")]
+position = Vector2(2266, 170)
+
+[node name="StaticBody2D11" parent="." unique_id=2074198702 instance=ExtResource("2_8gbba")]
+position = Vector2(2123, 61)
+
+[node name="StaticBody2D12" parent="." unique_id=714398505 instance=ExtResource("2_8gbba")]
+position = Vector2(2215, 62)

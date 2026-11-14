@@ -282,4 +282,10 @@ texture = ExtResource("8_j0k6p")
 [node name="StaticBody2D2" parent="." unique_id=502086475 instance=ExtResource("9_bku7o")]
 position = Vector2(-77, 73)
 
+[node name="Label1" type="Label" parent="." unique_id=1862770167]
+offset_left = 2374.0
+offset_top = -60.0
+offset_right = 2414.0
+offset_bottom = -37.0
+
 [connection signal="child_entered_tree" from="Player/CharacterBody2D/CollisionShape2D" to="Player/CharacterBody2D" method="_on_collision_shape_2d_child_entered_tree"]

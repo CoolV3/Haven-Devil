@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 
+@onready var label_1: Label = $"../../Label1"
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 @onready var character: CharacterBody2D = $"."
 var startPosition
@@ -44,4 +45,5 @@ func _physics_process(delta: float) -> void:
 			score += 1
 			collider.queue_free()
 			print(score)
+			label_1.text = "You did it. You got " + str(score) + " Coins!" 
 			
