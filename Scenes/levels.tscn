@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://rnu358pnrdbu" path="res://Scenes/character_body_2d.gd" id="4_jk88k"]
 [ext_resource type="Texture2D" uid="uid://k0t04l43cvfk" path="res://Assets/Level Devil Character(1).png" id="5_jk88k"]
 [ext_resource type="PackedScene" uid="uid://b3dnga1eyp688" path="res://Scenes/enemy.tscn" id="6_uotyi"]
+[ext_resource type="PackedScene" uid="uid://ds56oyurvxvqc" path="res://Scenes/spike.tscn" id="7_p1uqq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3akqy"]
 texture = ExtResource("1_xgx5e")
@@ -264,5 +265,8 @@ position = Vector2(930, 80)
 
 [node name="enemy3" parent="." unique_id=771277826 instance=ExtResource("6_uotyi")]
 position = Vector2(1675, 79)
+
+[node name="StaticBody2D" parent="." unique_id=12424889 instance=ExtResource("7_p1uqq")]
+position = Vector2(-7, 85)
 
 [connection signal="child_entered_tree" from="Player/CharacterBody2D/CollisionShape2D" to="Player/CharacterBody2D" method="_on_collision_shape_2d_child_entered_tree"]
